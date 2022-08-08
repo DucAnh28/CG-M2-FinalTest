@@ -127,9 +127,7 @@ public class Main {
                     case 6:
                         productManager.sortByPriceLowtoHight();
                         List<Product> productsListInMain = productManager.productList;
-                        for (int i = 0; i < productsListInMain.size(); i++) {
-                            System.out.println(productsListInMain.get(productsListInMain.size()-1));
-                        }
+                        System.out.println(productsListInMain.get(productsListInMain.size()-1));
                         break;
                     case 7:
                         readWrite.writeData(productManager.productList);
